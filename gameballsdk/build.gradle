@@ -66,3 +66,16 @@ dependencies {
 
     implementation 'com.github.cachapa:Expandablelayout:2.9.2'
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.mint'
+                artifactId = 'mint-android-app'
+                version = '0.0.4'
+            }
+        }
+    }
+}
