@@ -73,7 +73,7 @@ public class GameballWidgetActivity extends AppCompatActivity {
         settings.setLoadWithOverviewMode(true);
         settings.setRenderPriority(WebSettings.RenderPriority.HIGH);
         settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
-        settings.setAppCacheEnabled(false);
+        //settings.setAppCacheEnabled(false);
         settings.setDomStorageEnabled(true);
         settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
         settings.setUseWideViewPort(true);

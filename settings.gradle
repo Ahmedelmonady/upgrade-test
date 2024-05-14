@@ -1,1 +1,38 @@
+
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+rootProject.name = "gb-mobile-android"
 include ':gameballsdk'
